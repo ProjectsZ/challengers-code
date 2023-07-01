@@ -1,5 +1,5 @@
 class Persona {
-  constructor(nombre, edad, dni) {
+  constructor(nombre="", edad=0, dni=0) {
     this._nombre = nombre;
     this._edad = edad;
     this._dni = dni;
@@ -51,7 +51,7 @@ class Persona {
 }
 
 // Crear una instancia de la clase Persona
-const p = new Persona("Sam5", -10, 12345678898);
+const p = new Persona("Sam", -10, 12345678898);
 p.sNombre = p.nombre;
 p.sEdad = p.edad;
 p.sDni = p.dni;
